@@ -2,7 +2,7 @@ using System;
 
 /**
  * AbstractGirl
- * I'm not sure how I feel about the implication of literally turning women into Objects...
+ * I'm not sure how I feel about the implication of treating women like Objects...
  */
 public abstract class AbstractGirl
 {
@@ -26,11 +26,6 @@ public abstract class AbstractGirl
 
     public AbstractGirl(bool isHot, float fullnessPercentage, long monies)
     {
-        if (!isHot)
-        {
-            throw new SelfLoveException();
-        }
-
         IsHot = isHot;
         FullnessPercentage = fullnessPercentage;
         Monies = monies;
